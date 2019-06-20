@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
 
 
@@ -9,13 +9,13 @@ var version = '1.0.2'
 
 const usedCommandRecently = new Set()
 
-bot.on('ready', () =>{
+client.on('ready', () =>{
     console.log('Inicialização concluída!');
-    bot.user.setActivity("Stankor Bot V1.0.2", { type: 'STREAMING'}).catch(console.error);
+    client.user.setActivity("Stankor Bot V1.0.2", { type: 'STREAMING'}).catch(console.error);
 
 })
 
-bot.on('message', message=>{
+client.on('message', message=>{
     
     let args = message.content.substring(PREFIX.length).split(" ")
 
@@ -65,4 +65,4 @@ bot.on('message', message=>{
     }
 })
 
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
