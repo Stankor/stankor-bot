@@ -58,12 +58,11 @@ client.on('message', message=>{
             .addField('Nome de usuário:', message.author.username, true)
             .addField('Versão:', version, true)
             .addField('Servidor atual:', message.guild.name, true)
-            .addBlankField
             .setFooter('Sou um humano disfarçado.', "https://i.imgur.com/ICB60L7.png")
             .setThumbnail(message.author.avatarURL)
             .setTimestamp()
             message.channel.send(embed);
-            break;
+            break;  
         case 'avatar': 
             user = message.mentions.users.first()
             const quadro = new Discord.RichEmbed()
