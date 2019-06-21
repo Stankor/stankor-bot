@@ -61,13 +61,7 @@ client.on('message', message=>{
             .setFooter('Sou um humano disfarçado.')
             message.channel.send(embed);
             break;  
-         case 'avatar': 
-            user = message.mentions.users.first()
-            let embed = new Discord.RichEmbed()
-            .setImage(message.author.avatarURL)
-            .setColor(0x30EE53)
-            message.channel.send(embed);
-            break;
+         
     }
 })
 
