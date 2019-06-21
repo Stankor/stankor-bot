@@ -53,9 +53,9 @@ client.on('message', message=>{
         case 'perfil':
             const embed = new Discord.RichEmbed()
             .setTitle('Informações do usuário')
-            .setAuthor("", message.author.avatarURL)
+            .setAuthor("a", message.author.avatarURL)
             .setColor('0x30EE53')
-            .addField('Nome de usuário:', message.author.username, true)
+            .addField('Nick:', message.author.username, true)
             .addField('Versão:', version, true)
             .addField('Servidor atual:', message.guild.name, true)
             .setFooter('Sou um humano disfarçado.', "https://i.imgur.com/ICB60L7.png")
