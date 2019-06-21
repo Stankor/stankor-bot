@@ -65,8 +65,7 @@ client.on('message', message=>{
             user = message.mentions.users.first()
             const quadro = new Discord.RichEmbed()
             .setTitle('Avatar do ' + user.username) 
-            .addBlankField
-            .setThumbnail(user.avatarURL)
+            .setImage(user.avatarURL)
             .setColor('0x30EE53')
             .setFooter('Sou um humano disfarçado.')
             message.channel.send(quadro)
