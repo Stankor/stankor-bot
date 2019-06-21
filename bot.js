@@ -52,8 +52,7 @@ client.on('message', message=>{
             break;
         case 'perfil':
             const embed = new Discord.RichEmbed()
-            .setTitle('Informações do usuário')
-            .setAuthor("a", message.author.avatarURL)
+            .setAuthor("Informações do usuário", message.author.avatarURL)
             .setColor('0x30EE53')
             .addField('Nick:', message.author.username, true)
             .addField('Versão:', version, true)
