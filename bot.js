@@ -63,13 +63,13 @@ client.on('message', message=>{
             break;  
        case 'avatar': 
         if (!message.mentions.users.size) {
-            return message.channel.send('Sua foto de perfil: ${message.author.displayAvatarURL}');
+            return message.channel.send('Sua foto de perfil: {message.author.displayAvatarURL}');
             const avatarList = message.mentions.users.map(user => {
 
-                return "${user.username}\'s avatar: ${user.displayAvatarURL}";
+            return "{user.username}\'s avatar: {user.displayAvatarURL}";
                 });
-                message.channel.send(avatarList);
-                            
+            message.channel.send(avatarList);
+            break;            
             }         
     }
 })
