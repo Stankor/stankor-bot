@@ -67,7 +67,8 @@ client.on('message', message=>{
             .setTitle('Avatar do(a) ' + user.username) 
             .setImage(user.avatarURL)
             .setColor('0x30EE53')
-            .setFooter(icon_url, "https://images-ext-2.discordapp.net/external/pJ52xAFYjWy4YDMPcJwgrjvgkm2qyCMJ1Av6ir260io/https/0q0.eu/img/success.png" + ' | ' + "Stankor's Inc." + setTimestamp)
+            .timestamp
+            .setFooter(icon_url, "https://i.imgur.com/wtA61T1.png" + ' | ' + "Stankor's Inc." + setTimestamp)
             message.channel.send(quadro)
             break;                    
             
