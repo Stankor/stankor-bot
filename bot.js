@@ -61,7 +61,16 @@ client.on('message', message=>{
             .setFooter('Sou um humano disfarçado.')
             message.channel.send(embed);
             break;  
-         
+       case 'avatar': 
+        if (!message.mentions.users.size) {
+            return message.channel.send('Sua foto de perfil: ${message.author.displayAvatarURL}');
+            const avatarList = message.mentions.users.map(user => {
+
+                return "${user.username}\'s avatar: ${user.displayAvatarURL}";
+                });
+                message.channel.send(avatarList);
+                            
+            }         
     }
 })
 
