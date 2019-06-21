@@ -61,15 +61,16 @@ client.on('message', message=>{
             .setFooter('Sou um humano disfarçado.')
             message.channel.send(embed);
             break;  
-       case 'avatar': 
+        case 'avatar': 
             user = message.mentions.users.first()
             const quadro = new Discord.RichEmbed()
             .setTitle('Avatar do(a) ' + user.username) 
             .setImage(user.avatarURL)
             .setColor('0x30EE53')
-            .setFooter('https://i.imgur.com/wtA61T1.png' + ' | ' + "Stankor's Inc.")
+            .setFooter("Sou um humano disfarçado", "https://i.imgur.com/ICB60L7.png")
+            .setTimestamp()
             message.channel.send(quadro)
-            break;                    
+            break;                        
             
     }
 })
