@@ -52,8 +52,8 @@ client.on('message', message=>{
             break;
         case 'perfil':
             const embed = new Discord.RichEmbed()
-            .setTitle('**Informações do usuário**')
-            .setAuthor("", "message.author.avatarURL")
+            .setTitle('Informações do usuário')
+            .setAuthor("a", "message.author.avatarURL")
             .addField('Nome de usuário:', message.author.username, true)
             .addField('Versão:', version, true)
             .addField('Servidor atual:', message.guild.name, true)
