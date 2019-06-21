@@ -58,7 +58,7 @@ client.on('message', message=>{
             .addField('Versão:', version, true)
             .addField('Servidor atual:', message.guild.name, true)
             .addBlankField
-            .setColor(0x30EE53)
+            .setColor('0x30EE53')
             .setThumbnail(message.author.avatarURL)
             .setFooter('Sou um humano disfarçado.', "https://i.imgur.com/ICB60L7.png")
             .setTimestamp()
