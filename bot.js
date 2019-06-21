@@ -52,13 +52,16 @@ client.on('message', message=>{
             break;
         case 'perfil':
             const embed = new Discord.RichEmbed()
-            .setTitle('Informações do usuário')
+            .setTitle('**Informações do usuário**')
+            .setAuthor("", "message.author.avatarURL")
             .addField('Nome de usuário:', message.author.username, true)
             .addField('Versão:', version, true)
             .addField('Servidor atual:', message.guild.name, true)
+            .addBlankField
             .setColor(0x30EE53)
             .setThumbnail(message.author.avatarURL)
-            .setFooter('Sou um humano disfarçado.')
+            .setFooter('Sou um humano disfarçado.', "https://i.imgur.com/ICB60L7.png")
+            .setTimestamp()
             message.channel.send(embed);
             break;  
         case 'avatar': 
@@ -70,7 +73,7 @@ client.on('message', message=>{
             .setFooter("Sou um humano disfarçado", "https://i.imgur.com/ICB60L7.png")
             .setTimestamp()
             message.channel.send(quadro)
-            break;                        
+            break;
             
     }
 })
