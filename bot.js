@@ -62,10 +62,11 @@ client.on('message', message=>{
             message.channel.send(embed);
             break;  
         case 'avatar': 
-            var user = message.mentions.users.first();
-            let embed = new Discord.RichEmbed()
+            user = message.mentions.users.first()
+            const embed = new Discord.RichEmbed()
             .setImage(user.avatarURL)
             .setColor('0x30EE53')
+            .setFooter('Avatar do' + user)
             message.channel.send(embed)
             break;                   
             
