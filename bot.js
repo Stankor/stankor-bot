@@ -64,7 +64,7 @@ client.on('message', message=>{
         case 'avatar': 
             user = message.mentions.users.first()
             const quadro = new Discord.RichEmbed()
-            .setImage(user.avatarURL)
+            .setThumbnail(user.avatarURL)
             .setColor('0x30EE53')
             .setFooter('Avatar do' + user)
             message.channel.send(quadro)
