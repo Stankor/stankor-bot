@@ -10,7 +10,6 @@
   "author": "Stankor",
   "license": "ISC",
   "dependencies": {
-    "./commands/",
     "discord.js": "^11.5.1",
     "@discordjs/uws": "^10.149.0",
     "dotenv": "^8.0.0",
