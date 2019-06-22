@@ -2,7 +2,7 @@
   "name": "stankor-botv2",
   "version": "1.0.0",
   "description": "Um bot que vai te ajudar em tudo.",
-  "main": "index.js",
+  "main": "stankor.js",
   "scripts": {
     "node .": "node run stankor.js""
   },
