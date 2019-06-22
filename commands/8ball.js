@@ -38,3 +38,11 @@ exports.run = (client, message, args, tools) => {
         message.channel.send(ballEmbed);
 
     }
+
+module.exports.config = {
+    name: "8ball",
+    aliases: ["8ball", "perguntas", "8b"],
+    usage: ";8ball <pergunta>",
+    description: "Irei responder a sua pergunta.",
+    accessableby: "Membros"
+}
