@@ -6,7 +6,7 @@
   "scripts": {
     "node .": "node run stankor.js""
   },
-  "author": "Tyler Stankor",
+  "author": "Stankor",
   "license": "ISC",
   "dependencies": {
     "@discordjs/uws": "^10.149.0",
