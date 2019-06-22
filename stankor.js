@@ -8,7 +8,6 @@ const superagent = require('superagent')
 
 // Ligação do comando help
 const fs = require('fs');
-const Discord = require('discord.js');
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 
