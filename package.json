@@ -1,0 +1,21 @@
+{
+  "name": "stankor-botv2",
+  "version": "1.0.0",
+  "description": "Um bot que vai te ajudar em tudo.",
+  "main": "index.js",
+  "scripts": {
+    "node .": "node run stankor.js""
+  },
+  "author": "Tyler Stankor",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/uws": "^10.149.0",
+    "ascii-art": "^1.5.1",
+    "discord.js": "^11.5.1",
+    "fs": "0.0.1-security",
+    "google": "^2.1.0",
+    "google-images": "^2.1.0",
+    "google-translate-api": "^2.3.0",
+    "superagent": "^5.1.0"
+  }
+}
