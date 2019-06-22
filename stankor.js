@@ -8,8 +8,8 @@ const superagent = require('superagent')
 
 // Ligação do comando help
 const fs = require('fs');
-bot.commands = new Discord.Collection();
-bot.aliases = new Discord.Collection();
+client.commands = new Discord.Collection();
+client.aliases = new Discord.Collection();
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -22,9 +22,9 @@ fs.readdir("./commands/", (err, files) => {
 
     jsfile.forEach((f, i) => {
         let pull = require('./commands/$(f)');
-        bot.commands.set(pull.config.name, pull);
+        client.commands.set(pull.config.name, pull);
         pull.config.aliases.forEach(alias => {
-            bot.aliases.set(alias, pull.config.name)
+            client.aliases.set(alias, pull.config.name)
         });
     });
 });
