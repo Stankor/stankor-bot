@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.5.1",
-	"@discordjs/uws": "^10.149.0",
+    "@discordjs/uws": "^10.149.0",
+    "dotenv": "^8.0.0",
     "ascii-art": "^1.5.1",
     "fs": "0.0.1-security",
     "google": "^2.1.0",
