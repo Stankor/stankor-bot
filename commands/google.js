@@ -50,3 +50,11 @@ exports.run = (client, message, args) => {
         }
     });
 };
+
+module.exports.config = {
+    name: "google",
+    aliases: ["pesquisar", "gogli", "webpesquisar"],
+    usage: ";google <termo de busca>",
+    description: "Irei pesquisar e exibir resultados sobre o termo específicado.",
+    accessableby: "Membros"
+}
