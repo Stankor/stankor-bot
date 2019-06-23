@@ -34,3 +34,13 @@ exports.run = async (client, message, args, tools) => {
     message.delete({timeout: 1000}); // Espera 1000 milisegundos (aka 1 minuto) para apagar.
 
 }
+
+
+
+module.exports.config = {
+    name: "poll",
+    aliases: ["votar", "invotação", "votação"],
+    usage: ";poll <objetivo da votação>",
+    description: "Irei criar um embed de votação.",
+    accessableby: "Administrador"
+}
