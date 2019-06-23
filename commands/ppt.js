@@ -44,3 +44,11 @@ if (message.content === ';ppt') message.channel.send('Opções: ``Pedra``, ``Pap
 
 
 } // Fim da linha meu chapa.
+
+module.exports.config = {
+    name: "ppt",
+    aliases: ["pedrapapeltesoura", "pedrapt", "rcs"],
+    usage: ";ppt <pedra, papel ou tesoura>",
+    description: "Irei jogar pedra, papel, tesoura com você.",
+    accessableby: "Membros"
+}
