@@ -4,7 +4,7 @@ const Discord = require("discord.js")
 
 module.exports.run = async (client, message, args) => {
 
-    if(message.author.id != "ownerID") return message.channel.send("Você não é meu desenvolvedor.")
+    if(message.author.id != "339924970673012736") return message.channel.send("Você não é meu desenvolvedor.")
 
     if(!args[0]) return message.channel.send("Informe o comando que deseja recarregar.")
 
