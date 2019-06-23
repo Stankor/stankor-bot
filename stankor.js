@@ -32,7 +32,7 @@ fs.readdir("./commands/", (err, files) => {
 
 // Váriaveis constantes:
 const prefix = ';'; // Prefixo utilizado para executar comandos.
-const ownerID = 'ID'
+const ownerID = '339924970673012736'
 var version = '2.0'; // Versão do bot.
 
 // Objeto contendo os stats do servidor:
