@@ -10,3 +10,11 @@ module.exports.run = async (client, message, args) => {
     message.channel.send('Você tem um saldo de `' + bal + '`')
 
 }
+
+module.exports.config = {
+    name: "bal",
+    aliases: ["bal", "saldo", "money", "dinheiro"],
+    usage: ";bal <usuário>",
+    description: "Exibe o seu saldo.",
+    accessableby: "Membros"
+}
