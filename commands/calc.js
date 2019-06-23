@@ -28,3 +28,11 @@ exports.run = (client, message, args, tools) => {
     message.channel.send(embed);
 
 }
+
+module.exports.config = {
+    name: "calc",
+    aliases: ["calcular", "calculadora", "calculo"],
+    usage: ";calcular <cálculo>",
+    description: "Irei enviar o resultado do cálculo.",
+    accessableby: "Membros"
+}
