@@ -20,3 +20,11 @@ exports.run = async (client, message, args) => {
         msg.delete();
 
 }
+
+module.exports.config = {
+    name: "memes",
+    aliases: ["mene", "meme"],
+    usage: ";memes",
+    description: "Irei enviar um meme da internet.",
+    accessableby: "Membros"
+}
