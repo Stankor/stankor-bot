@@ -20,3 +20,11 @@ exports.run = async (client, message, args) => {
         msg.delete();
 
 }
+
+module.exports.config = {
+    name: "dog",
+    aliases: ["doggo", "cachorro", "cachorrito"],
+    usage: ";dog",
+    description: "Irei enviar a imagem de um cachorrito fofito.",
+    accessableby: "Membros"
+}
