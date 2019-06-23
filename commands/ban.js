@@ -44,6 +44,6 @@ module.exports.config = {
     name: "ban",
     aliases: ["b", "banish", "banir"],
     usage: ";ban <@user>",
-    description: "Bane um usuário no discord.",
+    description: "Bane um usuário do servidor no discord.",
     accessableby: "Administradores"
 }
