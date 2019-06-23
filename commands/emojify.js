@@ -34,3 +34,11 @@ exports.run = async (client, message, args) => {
             .join('')
     );
 };
+
+module.exports.config = {
+    name: "emojify",
+    aliases: ["emojificar", "emoji", "toemoji"],
+    usage: ";emojificar <texto>",
+    description: "Irei emojifar o seu texto.",
+    accessableby: "Membros"
+}
