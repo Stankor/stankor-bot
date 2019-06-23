@@ -7,28 +7,8 @@ const client = new Discord.Client();
 const superagent = require('superagent')
 
 // Ligação do comando help
-const fs = require('fs');
-client.commands = new Discord.Collection();
-client.aliases = new Discord.Collection();
-
-fs.readdir("./commands/", (err, files) => {
-
-    if(err) console.log(err)
-
-    let jsfile = files.filter(f => f.split(".").pop() === "js")
-    if(jsfile.lenght <= 0) {
-        return console.log("[LOGS] Não foi possível encontrar comandos!");
-    }
-
-    jsfile.forEach((f, i) => {
-        let pull = require(`./commands/${f}`);
-        client.commands.set(pull.config.name, pull);
-        pull.config.aliases.forEach(alias => {
-            client.aliases.set(alias, pull.config.name)
-        });
-    });
-});
-
+"let commandFile = require(./commands/${cmd}.js); // Vai pegar o arquivo do comando.
+        commandFile.run(client, message, args, ops); // Vai passar váriaveis designadas pro arquivo.'
 
 // Váriaveis constantes:
 const prefix = ';'; // Prefixo utilizado para executar comandos.
