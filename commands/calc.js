@@ -11,7 +11,7 @@ exports.run = (client, message, args, tools) => {
     // Vamos evaluar o cálculo usando o pacote 'mathjs'
     let resp;
     try {
-        resp = math.eval(args.join(' '));    
+        resp = math.evaluate(args.join(' '));    
     } catch (e) {
         return message.channel.send('Cálculo inválido.');        
     }
