@@ -1,6 +1,6 @@
 // Comando ascii - requer 1 package.
 // 'npm i ascii-art'
-const ascii = require(ascii-art);
+const ascii = require("ascii-art");
 
 // Command Handler
 exports.run = (client, message,args, ops) => {
@@ -22,4 +22,13 @@ exports.run = (client, message,args, ops) => {
         }); // A opção no final especifica que a mensagem deverá estar em um bloco de código.
 
     });
+}
+
+
+module.exports.config = {
+    name: "ascii",
+    aliases: ["ascmesagem", "asciimensagem", "codascii"],
+    usage: ";ascii <texto>",
+    description: "Codifica sua mensagem usando a fonte ascii.",
+    accessableby: "Membros"
 }
