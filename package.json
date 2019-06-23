@@ -18,6 +18,8 @@
     "google": "^2.1.0",
     "google-images": "^2.1.0",
     "google-translate-api": "^2.3.0",
+    "mathjs": "^6.0.2",
+	  "quick.db": "^7.0.0-b22",
     "superagent": "^5.1.0"	
   }
 }
