@@ -74,6 +74,6 @@ module.exports.config = {
     name: "mute",
     aliases: ["m", "nospeak", "mutar", "silenciar"],
     usage: ";mute <@user> <motivo>",
-    description: "Silencia um usuário no discord.",
+    description: "Silencia um usuário no servidor do discord.",
     accessableby: "Members"
 }
