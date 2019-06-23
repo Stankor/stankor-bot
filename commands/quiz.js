@@ -38,3 +38,11 @@ try {
   }
 
 }
+
+module.exports.config = {
+    name: "quiz",
+    aliases: ["quiz", "joguinhoconhecimentos"],
+    usage: ";quiz",
+    description: "Irei te fazer algumas pergunta de conhecimento geral, será que você consegue responder?",
+    accessableby: "Membros"
+}
