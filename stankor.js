@@ -7,7 +7,7 @@ const client = new Discord.Client();
 const superagent = require('superagent')
 
 // Ligação do comando help
-"let commandFile = require(./commands/${cmd}.js); // Vai pegar o arquivo do comando.
+let commandFile = require(./commands/${cmd}.js); // Vai pegar o arquivo do comando.
         commandFile.run(client, message, args, ops); // Vai passar váriaveis designadas pro arquivo.'
 
 // Váriaveis constantes:
