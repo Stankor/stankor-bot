@@ -11,3 +11,11 @@ exports.run = async (client, message, args) => {
         message.channel.send(`:pencil2: ${args[0]} mensagens foram deletadas.`).then(msg => msg.delete(5000));
     });
 }
+
+module.exports.config = {
+    name: "purge",
+    aliases: ["prune", "clear", "limpar"],
+    usage: ";limpar <qnt de mensagens>",
+    description: "Irei apagar a quantidade de mensagens específicada.",
+    accessableby: "Administrador"
+}
