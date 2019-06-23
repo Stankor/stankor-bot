@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 
 module.exports.run = async (client, message, args) => {
 
-    if(message.author.id != "ownerID") return message.channel.send("Você não é meu desenvolvedor")
+    if(message.author.id != "339924970673012736") return message.channel.send("Você não é meu desenvolvedor")
 
     try {
         await message.channel.send("O bot está desligando...")
