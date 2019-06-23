@@ -80,7 +80,7 @@ client.on('message', message => {
 
         // Opções
         let ops = {
-            ownerID: "339924970673012736"
+            ownerID: ownerID
         }
         
         if(!message.content.startsWith(prefix)) return;
