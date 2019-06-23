@@ -36,3 +36,11 @@ exports.run = async (client, message, args) => {
         message.channel.send(lembreteEmbed);
     }, ms(lembreteTempo));
 }
+
+module.exports.config = {
+    name: "lembrete",
+    aliases: ["remindme", "lembrar", "avisar"],
+    usage: ";lembrete <tempo> <motivo>",
+    description: "Irei responder a sua pergunta.",
+    accessableby: "Membros"
+}
