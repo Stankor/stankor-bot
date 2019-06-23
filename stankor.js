@@ -7,8 +7,7 @@ const client = new Discord.Client();
 const superagent = require('superagent')
 
 // Ligação do comando help
-let commandFile = require(`./commands/${cmd}.js`); // Vai pegar o arquivo do comando.
-        commandFile.run(client, message, args, ops); // Vai passar váriaveis designadas pro arquivo.'
+
 
 // Váriaveis constantes:
 const prefix = ';'; // Prefixo utilizado para executar comandos.
@@ -63,9 +62,9 @@ client.on('message', message => {
             ownerID: ownerID
         }
         
-        if(!message.content.startsWith(prefix)) return;
-        let commandfile = bot.commands.get(cmd.slice(prefix.lenght)) || bot.commands.get(bot.aliases.get(cmd.slice(prefix.lenght)))
-        if(commandfile) commandfile.run(client, message, args)
+        let commandFile = require(`./commands/${cmd}.js`); 
+        commandFile.run(client, message, args); 
+            
     } catch(e) {
         console.log(e.stack);
     }
