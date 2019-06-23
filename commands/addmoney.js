@@ -15,3 +15,11 @@ module.exports.run = async (client, message, args) => {
     db.add('userInfo.balance', args[0])
 
 }
+
+module.exports.config = {
+    name: "addmoney",
+    aliases: ["adicionarcash", "adddinheiro", "moneyadd"],
+    usage: ";addmoney <@usuário> <quantia>",
+    description: "Adiciona dinheiro à conta do usuário específicado.",
+    accessableby: "Desenvolvedor"
+}
